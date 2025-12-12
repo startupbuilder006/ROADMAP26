@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=1280, initial-scale=1.0" name="viewport">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; background-color: #000000; }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        .text-brand-orange { color: #FF7900; }
+        .bg-brand-orange { background-color: #FF7900; }
+        .border-brand-orange { border-color: #FF7900; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        
+        /* Card Styling */
+        .info-card {
+            background-color: #141414;
+            border-left: 4px solid #FF7900;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle at top right, rgba(255, 121, 0, 0.1), transparent 70%);
+            pointer-events: none;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            background-color: #1a1a1a;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(255, 121, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body style="">
+<div class="slide-container">
+<!-- Header -->
+<div class="px-16 pt-12 pb-6 border-b border-gray-800 flex justify-between items-end">
+<div>
+<div class="flex items-center mb-2">
+<span class="bg-brand-orange text-black font-bold px-2 py-0.5 text-xs uppercase tracking-widest mr-3">Formation</span>
+<h2 class="text-brand-orange font-montserrat font-bold tracking-widest uppercase text-sm">PRP Program</h2>
+</div>
+<h1 class="text-4xl font-montserrat font-black uppercase leading-tight">
+                    Programme de<br>Reconversion Professionnelle
+                </h1>
+</div>
+<div class="text-right">
+<p class="text-2xl font-light text-white opacity-80">(Master Réparateur)</p>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 flex px-16 py-10 gap-16">
+<!-- Left: Description -->
+<div class="w-5/12 flex flex-col justify-center">
+<h3 class="text-xl font-montserrat font-bold text-brand-orange mb-6 uppercase tracking-wide border-l-4 border-brand-orange pl-4">Objectifs &amp; Compétences</h3>
+<div class="text-gray-300 font-light leading-relaxed text-lg space-y-4 text-justify">
+<p>
+                        Cette formation offre une immersion complète dans l’environnement d’un technicien. Elle permet d’apprendre à <strong class="text-white font-medium">identifier les pannes</strong> et à maîtriser l'outillage professionnel.
+                    </p>
+<p>
+                        Le cœur du programme vise à savoir <strong class="text-white font-medium">démonter et remonter smartphones et tablettes</strong> en toute sécurité pour le remplacement de pièces.
+                    </p>
+<p>
+                        Chaque participant sera amené à réparer une dizaine de mobiles, en suivant une méthodologie rigoureuse indiquée par les formateurs et en effectuant les tests de contrôle qualité.
+                    </p>
+</div>
+</div>
+<!-- Right: 4 Key Points Grid -->
+<div class="w-7/12 grid grid-cols-2 grid-rows-2 gap-6">
+<!-- Card 1 -->
+<div class="info-card">
+<div class="flex justify-between items-start mb-2">
+<div class="icon-box">
+<i class="fa-regular fa-clock text-brand-orange text-xl"></i>
+</div>
+<span class="text-5xl font-montserrat font-black text-white">120<span class="text-2xl align-top ml-1">h</span></span>
+</div>
+<p class="text-gray-500 font-bold uppercase text-xs tracking-wider mb-1">Durée</p>
+<p class="text-white text-lg font-medium leading-tight">En présentiel par cohorte</p>
+</div>
+<!-- Card 2 -->
+<div class="info-card">
+<div class="flex justify-between items-start mb-2">
+<div class="icon-box">
+<i class="fa-solid fa-arrows-spin text-brand-orange text-xl"></i>
+</div>
+<span class="text-5xl font-montserrat font-black text-white">4</span>
+</div>
+<p class="text-gray-500 font-bold uppercase text-xs tracking-wider mb-1">Fréquence</p>
+<p class="text-white text-lg font-medium leading-tight">Cohortes par année<br><span class="text-sm text-gray-400 font-normal">Rabat &amp; Agadir</span></p>
+</div>
+<!-- Card 3 -->
+<div class="info-card">
+<div class="flex justify-between items-start mb-2">
+<div class="icon-box">
+<i class="fa-solid fa-user-graduate text-brand-orange text-xl"></i>
+</div>
+<span class="text-5xl font-montserrat font-black text-white">24</span>
+</div>
+<p class="text-gray-500 font-bold uppercase text-xs tracking-wider mb-1">Capacité</p>
+<p class="text-white text-lg font-medium leading-tight">Bénéficiaires par cohorte</p>
+</div>
+<!-- Card 4 -->
+<div class="info-card">
+<div class="flex justify-between items-start mb-2">
+<div class="icon-box">
+<i class="fa-solid fa-wheelchair text-brand-orange text-xl"></i>
+</div>
+<span class="text-5xl font-montserrat font-black text-white">8<span class="text-2xl align-top ml-1">+</span></span>
+</div>
+<p class="text-gray-500 font-bold uppercase text-xs tracking-wider mb-1">Inclusion</p>
+<p class="text-white text-lg font-medium leading-tight">Personnes en situation de handicap</p>
+</div>
+</div>
+</div>
+<!-- Footer Decoration -->
+<div class="absolute bottom-0 left-0 w-2/3 h-1 bg-brand-orange"></div>
+<div class="absolute bottom-0 right-0 w-1/3 h-1 bg-gray-800"></div>
+<div class="absolute bottom-6 right-16 flex items-center gap-2 opacity-30">
+<span class="text-xs uppercase tracking-widest text-white">Roadmap Stratégique</span>
+<div class="w-12 h-px bg-white"></div>
+</div>
+</div>
+
+</body></html>

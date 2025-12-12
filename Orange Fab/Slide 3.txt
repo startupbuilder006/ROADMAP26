@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Orange Fab Maroc - Vue d'ensemble Incubation</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .bg-black-brand { background-color: #000000; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        /* Card hover effect */
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden" style="">
+<!-- Main Container -->
+<div class="w-[1280px] h-[720px] bg-white flex flex-col relative overflow-hidden shadow-2xl mx-auto">
+<!-- Header Section -->
+<div class="w-full px-16 pt-12 pb-8 flex justify-between items-end border-b border-gray-200" style="position: relative; transform: translate(-1.72193px, -27.5508px);">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 bg-orange-brand flex items-center justify-center text-white font-bold text-xs">
+<i class="fas fa-rocket"></i>
+</div>
+<p class="text-sm font-roboto font-bold text-gray-500 uppercase tracking-wider">Programme d'Incubation</p>
+</div>
+<h2 class="text-5xl font-black font-montserrat text-black leading-tight">
+                    Vue d'ensemble <span class="text-orange-brand">Incubation</span>
+</h2>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-3 h-3 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold font-montserrat">Orange Fab Maroc</p>
+</div>
+<p class="text-xs text-gray-500 font-roboto">Roadmap 2026</p>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="flex-1 px-16 py-10 bg-gray-50" style="position: relative; transform: translate(0px, -27.5508px);">
+<div class="grid grid-cols-3 gap-8 h-full">
+<!-- Card 1: Target Audience -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-orange-brand flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center text-orange-brand text-2xl">
+<i class="fas fa-lightbulb"></i>
+</div>
+<span class="px-3 py-1 bg-gray-100 text-xs font-bold text-gray-500 rounded-full">CIBLE</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold font-montserrat text-black mb-2">Porteurs d'Idées</h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">Projets Tech</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Talents innovants prêts à concrétiser leur vision technologique</p>
+</div>
+</div>
+<!-- Card 2: Goal -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-black flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl">
+<i class="fas fa-flag-checkered"></i>
+</div>
+<span class="px-3 py-1 bg-orange-100 text-xs font-bold text-orange-brand rounded-full">OBJECTIF</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold font-montserrat text-orange-brand mb-2">Incubation Startup</h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">&amp; Accès Marché</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Transformer l'idée en entreprise viable et accéder aux premiers clients</p>
+</div>
+</div>
+<!-- Card 3: Duration -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-orange-brand flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center text-orange-brand text-2xl">
+<i class="fas fa-hourglass-half"></i>
+</div>
+<span class="px-3 py-1 bg-gray-100 text-xs font-bold text-gray-500 rounded-full">DURÉE</span>
+</div>
+<div>
+<h3 class="text-6xl font-black font-montserrat text-black mb-2">6 <span class="text-3xl">Mois</span></h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">Programme Intensif</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Accompagnement complet de l'idéation au lancement</p>
+</div>
+</div>
+<!-- Card 4: Location Rabat -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-black flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<span class="px-3 py-1 bg-orange-100 text-xs font-bold text-orange-brand rounded-full">HUB</span>
+</div>
+<div>
+<h3 class="text-4xl font-black font-montserrat text-orange-brand mb-2">Rabat</h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">ODC Rabat - ODC Club Casablanca</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Au cœur de l'écosystème administratif et technologique</p>
+</div>
+</div>
+<!-- Card 5: Location Tanger -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-orange-brand flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center text-orange-brand text-2xl">
+<i class="fas fa-ship"></i>
+</div>
+<span class="px-3 py-1 bg-gray-100 text-xs font-bold text-gray-500 rounded-full">HUB</span>
+</div>
+<div>
+<h3 class="text-4xl font-black font-montserrat text-black mb-2">Tanger</h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">Orange Fab Tanger</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Hub industriel et logistique stratégique</p>
+</div>
+</div>
+<!-- Card 6: Location Agadir -->
+<div class="stat-card bg-white p-8 rounded-xl shadow-sm border-l-8 border-black flex flex-col justify-between h-64">
+<div class="flex justify-between items-start">
+<div class="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center text-black text-2xl">
+<i class="fas fa-sun"></i>
+</div>
+<span class="px-3 py-1 bg-orange-100 text-xs font-bold text-orange-brand rounded-full">HUB</span>
+</div>
+<div>
+<h3 class="text-4xl font-black font-montserrat text-orange-brand mb-2">Agadir</h3>
+<p class="text-lg font-medium text-gray-800 font-roboto">ODC Agadir</p>
+<p class="text-sm text-gray-500 mt-2 font-roboto">Centre d'excellence touristique et agricole</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Decoration -->
+<div class="absolute bottom-0 right-0 w-1/3 h-2 bg-orange-brand"></div>
+<div class="absolute bottom-0 left-0 w-2/3 h-2 bg-black"></div>
+</div>
+
+</body></html>

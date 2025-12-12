@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Roadmap Orange Fab 2026 - Timeline Annuelle</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        /* Orange Brand Colors */
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .bg-black-brand { background-color: #000000; }
+        .bg-green-brand { background-color: #10B981; }
+        .bg-purple-brand { background-color: #8B5CF6; }
+        
+        /* Font Family - Helvetica as requested */
+        body, h1, h2, h3, h4, h5, h6, p, div, span { 
+            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif !important; 
+        }
+        
+        /* Grid Styling */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: 80px repeat(12, 1fr);
+            height: 100%;
+            position: relative;
+        }
+        
+        .month-header {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            color: #6B7280;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #E5E7EB;
+            letter-spacing: 0.05em;
+        }
+        
+        .grid-line {
+            border-right: 1px dashed #E5E7EB;
+            height: 100%;
+            position: absolute;
+            top: 30px;
+            z-index: 0;
+        }
+        
+        .event-bar {
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 10;
+            padding: 0 8px;
+            text-align: center;
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .axis-label {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: #9CA3AF;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden">
+<div class="w-[1280px] h-[720px] bg-white flex flex-col relative overflow-hidden shadow-2xl mx-auto">
+<!-- Header -->
+<div class="w-full px-12 pt-8 pb-4 flex justify-between items-end bg-white z-20">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<div class="w-2 h-2 rounded-full bg-orange-brand"></div>
+<div class="w-2 h-2 rounded-full bg-black"></div>
+</div>
+<h2 class="text-4xl font-black text-orange-brand uppercase tracking-tight leading-none">
+                    ROADMAP ORANGE FAB 2026
+                </h2>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-orange-brand"></div>
+<p class="text-xs font-bold text-gray-600">Start &amp; Scale</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-green-brand"></div>
+<p class="text-xs font-bold text-gray-600">Sourcing BUs</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-purple-brand"></div>
+<p class="text-xs font-bold text-gray-600">Events &amp; PFE</p>
+</div>
+</div>
+</div>
+<!-- Timeline Container (Single Instance) -->
+<div class="flex-1 px-12 pb-8 relative w-full h-full bg-gray-50">
+<div class="w-full h-full bg-white rounded-xl shadow-sm border border-gray-200 p-6 relative overflow-hidden">
+<!-- Grid Structure -->
+<div class="timeline-grid w-full h-full relative">
+<!-- Y Axis Label -->
+<div class="row-span-full border-r border-gray-200 mr-2">
+<p class="axis-label uppercase">Calendrier 2026</p>
+</div>
+<!-- Month Headers -->
+<div class="month-header">JAN</div>
+<div class="month-header">FÉV</div>
+<div class="month-header">MAR</div>
+<div class="month-header">AVR</div>
+<div class="month-header">MAI</div>
+<div class="month-header">JUIN</div>
+<div class="month-header">JUIL</div>
+<div class="month-header">AOÛT</div>
+<div class="month-header">SEP</div>
+<div class="month-header">OCT</div>
+<div class="month-header">NOV</div>
+<div class="month-header">DÉC</div>
+<!-- Vertical Grid Lines (Background) -->
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 1);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 2);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 3);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 4);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 5);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 6);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 7);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 8);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 9);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 10);"></div>
+<div class="grid-line" style="left: calc(80px + (100% - 80px)/12 * 11);"></div>
+<!-- Events Layer (Absolute Positioning) -->
+<!-- ROW 1: Start & Scale Cohorts -->
+<div class="absolute w-full" style="top: 50px; height: 36px;">
+<!-- Cohorte 1: Jan-Feb (2 months) -->
+<div class="event-bar bg-orange-brand" style="position: absolute; left: calc(80px + 5px); width: calc((100% - 80px)/6 - 10px); height: 100%;">
+<p>Programme Start &amp; Scale (1ère cohorte)</p>
+</div>
+<!-- Cohorte 2: May-Dec (8 months) -->
+<div class="event-bar bg-orange-brand" style="position: absolute; left: calc(80px + (100% - 80px)*4/12 + 5px); width: calc((100% - 80px)*7.5/12 - 10px); height: 100%;">
+<p>Programme Start &amp; Scale (2ème cohorte)</p>
+</div>
+<!-- Closing Ceremony: Dec -->
+<div class="event-bar bg-orange-brand" style="position: absolute; left: calc(80px + (100% - 80px)*11.5/12 + 2px); width: calc((100% - 80px)*0.5/12 - 4px); height: 100%; font-size: 0.5rem; padding: 0 2px;">
+<p><i class="fas fa-flag-checkered"></i></p>
+</div>
+</div>
+<!-- ROW 2: Special Events (GITEX, WEB SUMMIT, VIVA TECH) -->
+<div class="absolute w-full" style="top: 100px; height: 32px;">
+<!-- GITEX: April -->
+<div class="event-bar bg-purple-brand opacity-90" style="position: absolute; left: calc(80px + (100% - 80px)*3.2/12); width: calc((100% - 80px)*0.6/12); height: 100%; font-size: 0.55rem;">
+<p style="font-size: 6px;">GITEX AFRICA</p>
+</div>
+<!-- WEB SUMMIT: Nov (Fixed position: Month 11) -->
+<div class="event-bar bg-purple-brand opacity-90" style="position: absolute; left: calc(80px + (100% - 80px)*10.2/12); width: calc((100% - 80px)*0.6/12); height: 100%; font-size: 0.55rem;">
+<p style="font-size: 6px;">WEB SUMMIT</p>
+</div>
+<!-- VIVA TECH: May -->
+<div class="event-bar bg-purple-brand opacity-90" style="position: absolute; left: calc(80px + (100% - 80px)*4.2/12); width: calc((100% - 80px)*0.6/12); height: 100%; font-size: 0.55rem;">
+<p style="font-size: 6px;">VIVA TECH</p>
+</div>
+</div>
+<!-- ROW 3: POESAM (Central Highlight) -->
+<div class="absolute w-full" style="top: 150px; height: 44px;">
+<!-- POESAM: Feb-Aug (7 months) -->
+<div class="event-bar bg-orange-brand border-2 border-white shadow-md" style="position: absolute; left: calc(80px + (100% - 80px)*1/12 + 10px); width: calc((100% - 80px)*7/12 - 20px); height: 100%; font-size: 0.9rem; font-weight: 800;">
+<p><i class="fas fa-trophy mr-2"></i> POESAM 2026</p>
+</div>
+</div>
+<!-- ROW 4: PFE (Removed duplicate) -->
+<div class="absolute w-full" style="top: 210px; height: 36px;">
+<!-- PFE: Jan-May (5 months) -->
+<div class="event-bar bg-purple-brand opacity-80" style="position: absolute; left: calc(80px + 10px); width: calc((100% - 80px)*4.5/12); height: 100%;">
+<p>PFE &amp; Talents</p>
+</div>
+</div>
+<!-- ROW 5: ODC Clubs Sensibilisation -->
+<div class="absolute w-full" style="top: 260px; height: 36px;">
+<!-- Feb Session -->
+<div class="event-bar bg-orange-brand" style="position: absolute; left: calc(80px + (100% - 80px)*1.2/12); width: calc((100% - 80px)*2.5/12); height: 100%; font-size: 0.6rem;">
+<p>Sensibilisation ODC Clubs Hybrides</p>
+</div>
+<!-- Sept Session -->
+<div class="event-bar bg-orange-brand" style="position: absolute; left: calc(80px + (100% - 80px)*8.2/12); width: calc((100% - 80px)*2.5/12); height: 100%; font-size: 0.6rem;">
+<p>Sensibilisation ODC Clubs Hybrides</p>
+</div>
+</div>
+<!-- ROW 6: Sourcing BUs (Bottom Layer) -->
+<div class="absolute w-full" style="top: 310px; height: 40px;">
+<!-- Jan-Jun -->
+<div class="event-bar bg-green-brand" style="position: absolute; left: calc(80px + 5px); width: calc((100% - 80px)*5.5/12 - 10px); height: 100%;">
+<p>Sourcing &amp; Accélération BUs</p>
+</div>
+<!-- Event Orange Fab: June -->
+<div class="event-bar bg-purple-brand" style="position: absolute; left: calc(80px + (100% - 80px)*5.5/12 + 2px); width: calc((100% - 80px)*0.9/12); height: 100%; font-size: 0.55rem; padding: 0 4px;">
+<p style="font-size: 6px;">Event Orange Fab</p>
+</div>
+<!-- Jul-Dec -->
+<div class="event-bar bg-green-brand" style="position: absolute; left: calc(80px + (100% - 80px)*6.5/12 + 5px); width: calc((100% - 80px)*5.5/12 - 10px); height: 100%;">
+<p>Sourcing &amp; Accélération BUs</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Axis Label Vertical (Left Side) - Visual Trick -->
+<div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 font-bold text-xs tracking-widest" style="writing-mode: vertical-rl; transform: rotate(180deg) translateY(50%);">
+                PLANNING STRATÉGIQUE
+            </div>
+</div>
+<!-- Footer Decoration -->
+<div class="absolute bottom-0 left-0 w-full h-2 bg-black flex">
+<div class="w-1/4 h-full bg-orange-brand"></div>
+<div class="w-1/4 h-full bg-green-brand"></div>
+<div class="w-1/4 h-full bg-purple-brand"></div>
+<div class="w-1/4 h-full bg-black"></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=1280, initial-scale=1.0" name="viewport">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; background-color: #000000; }
+    .slide-container {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .text-brand-orange { color: #FF7900; }
+    .bg-brand-orange { background-color: #FF7900; }
+    .border-brand-orange { border-color: #FF7900; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    
+    /* Event Card Styles */
+    .event-card {
+        background-color: #141414;
+        border: 1px solid #262626;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 40px;
+    }
+
+    .event-card:hover {
+        background-color: #1a1a1a;
+        border-color: #FF7900;
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    /* Dynamic Date/Number Display */
+    .metric-display {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        line-height: 0.9;
+        color: white;
+    }
+
+    .metric-label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #FF7900;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    /* Abstract Background Icon */
+    .bg-icon-abstract {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        font-size: 200px;
+        opacity: 0.03;
+        color: white;
+        transform: rotate(-10deg);
+        transition: all 0.5s ease;
+        pointer-events: none;
+    }
+
+    .event-card:hover .bg-icon-abstract {
+        opacity: 0.1;
+        color: #FF7900;
+        transform: rotate(0deg) scale(1.1);
+    }
+
+    /* Separator */
+    .orange-dash {
+        width: 48px;
+        height: 6px;
+        background-color: #FF7900;
+        margin: 24px 0;
+        transition: width 0.3s ease;
+    }
+
+    .event-card:hover .orange-dash {
+        width: 80px;
+    }
+
+    /* Background texture */
+    .grid-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        background-image: radial-gradient(#333 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.2;
+        mask-image: linear-gradient(to bottom, black, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    }
+</style>
+</head>
+<body style="">
+<div class="slide-container">
+<!-- Decorative Background Pattern -->
+<div class="grid-pattern"></div>
+<!-- Header -->
+<div class="px-16 pt-12 pb-6 flex justify-between items-end relative z-10 border-b border-gray-800 bg-black">
+<div>
+<div class="flex items-center mb-2">
+<span class="bg-brand-orange text-black font-bold px-2 py-0.5 text-xs uppercase tracking-widest mr-3">Animation</span>
+<h2 class="text-brand-orange font-montserrat font-bold tracking-widest uppercase text-sm">Calendrier 2026</h2>
+</div>
+<h1 class="text-4xl font-montserrat font-black uppercase leading-tight">
+                Événements &amp;<br>Communauté
+            </h1>
+</div>
+<div class="text-right">
+<p class="text-xl font-light text-gray-400">Temps Forts</p>
+</div>
+</div>
+<!-- Main Content: 2 Cards Side by Side -->
+<div class="flex-1 px-16 py-10 flex gap-10 relative z-10">
+<!-- Card 1: Arduino Day -->
+<div class="w-1/2">
+<div class="event-card group">
+<!-- Background Icon -->
+<i class="fa-solid fa-microchip bg-icon-abstract"></i>
+<!-- Header Part -->
+<div>
+<div class="flex justify-between items-start">
+<div>
+<p class="metric-label">Le Rendez-vous</p>
+<div class="flex items-baseline gap-2">
+<span class="text-6xl metric-display">23&nbsp;<span style="color: rgb(156, 163, 175); font-size: 1.875rem; font-weight: 300; text-transform: uppercase; font-family: Roboto, sans-serif;">Mars 2026</span></span>
+</div>
+</div>
+<div class="w-12 h-12 rounded bg-gray-900 flex items-center justify-center border border-gray-800 group-hover:border-brand-orange transition-colors">
+<i class="fa-solid fa-calendar-day text-white text-xl"></i>
+</div>
+</div>
+<div class="orange-dash"></div>
+<h3 class="text-3xl font-montserrat font-black text-white uppercase mb-4 group-hover:text-brand-orange transition-colors">Arduino Day</h3>
+</div>
+<!-- Description Part -->
+<div>
+<p class="text-gray-300 font-light leading-relaxed text-lg mb-4">
+                        Un événement incontournable dédié à la <strong class="text-white font-medium">créativité collaborative</strong>.
+                    </p>
+<ul class="space-y-2">
+<li class="flex items-center text-gray-400 text-sm">
+<i class="fa-solid fa-check text-brand-orange mr-3 text-xs"></i>
+<p>Ateliers pratiques &amp; prototypage</p>
+</li>
+<li class="flex items-center text-gray-400 text-sm">
+<i class="fa-solid fa-check text-brand-orange mr-3 text-xs"></i>
+<p>Conférences inspirantes</p>
+</li>
+<li class="flex items-center text-gray-400 text-sm">
+<i class="fa-solid fa-check text-brand-orange mr-3 text-xs"></i>
+<p>Networking Makers &amp; Experts</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 2: Talk Shows -->
+<div class="w-1/2">
+<div class="event-card group">
+<!-- Background Icon -->
+<i class="fa-solid fa-microphone-lines bg-icon-abstract"></i>
+<!-- Header Part -->
+<div>
+<div class="flex justify-between items-start">
+<div>
+<p class="metric-label">Sessions</p>
+<div class="flex items-baseline gap-2">
+<span class="text-6xl metric-display">02</span>
+<span class="text-3xl font-light text-gray-400 uppercase">Éditions</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded bg-gray-900 flex items-center justify-center border border-gray-800 group-hover:border-brand-orange transition-colors">
+<i class="fa-solid fa-comments text-white text-xl"></i>
+</div>
+</div>
+<div class="orange-dash"></div>
+<h3 class="text-3xl font-montserrat font-black text-white uppercase mb-4 group-hover:text-brand-orange transition-colors">Talk Shows</h3>
+</div>
+<!-- Description Part -->
+<div>
+<p class="text-gray-300 font-light leading-relaxed text-lg mb-4">
+                        Rencontres interactives entre experts et passionnés pour explorer les <strong class="text-white font-medium">dernières tendances tech</strong>.
+                    </p>
+<div class="bg-gray-900 p-4 rounded border-l-2 border-gray-700 group-hover:border-brand-orange transition-colors mb-2">
+<div class="flex items-center mb-1">
+<i class="fa-solid fa-location-dot text-brand-orange mr-2 text-xs"></i>
+<p class="text-xs font-bold text-white uppercase tracking-wider">Localisation</p>
+</div>
+<p class="text-gray-400 text-sm pl-5">Entre Rabat et Agadir</p>
+</div>
+<p class="text-gray-400 text-sm mt-3 flex items-center">
+<i class="fa-solid fa-lightbulb text-brand-orange mr-2"></i>
+                        Espace d’inspiration et de collaboration
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-6 right-16 flex items-center gap-2 opacity-30 z-20">
+<span class="text-xs font-montserrat font-bold text-white uppercase tracking-widest">Culture Maker</span>
+<div class="w-12 h-px bg-white"></div>
+</div>
+</div>
+
+</body></html>

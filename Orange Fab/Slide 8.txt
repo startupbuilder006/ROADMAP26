@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>POESAM 2026 Challenge</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .bg-black-brand { background-color: #000000; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-line {
+            position: absolute;
+            left: 24px;
+            top: 40px;
+            bottom: 20px;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        /* Podium Animation Simulation */
+        .podium-block {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden" style="">
+<div class="w-[1280px] h-[720px] bg-white flex flex-col relative overflow-hidden shadow-2xl mx-auto">
+<!-- Header -->
+<div class="w-full px-16 pt-10 pb-6 flex justify-between items-end border-b border-gray-200 bg-white z-10">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 bg-black flex items-center justify-center text-white font-bold text-xs rounded-sm">
+<i class="fas fa-trophy"></i>
+</div>
+<p class="text-sm font-roboto font-bold text-gray-500 uppercase tracking-wider">Challenge &amp; Excellence</p>
+</div>
+<h2 class="text-5xl font-black font-montserrat text-black leading-tight">
+                    POESAM <span class="text-orange-brand">2026</span>
+</h2>
+<p class="text-xl font-medium font-montserrat text-gray-600 mt-2">Prix Orange de l'Entrepreneur Social</p>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-3 h-3 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold font-montserrat">Orange Fab Maroc</p>
+</div>
+<p class="text-xs text-gray-500 font-roboto">Roadmap Stratégique</p>
+</div>
+</div>
+<!-- Content Split -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Column: Context & Narrative -->
+<div class="w-5/12 px-16 py-8 flex flex-col bg-white relative">
+<h3 class="text-2xl font-bold font-montserrat text-black mb-6 border-l-4 border-orange-brand pl-4">Notre Trajectoire</h3>
+<div class="relative space-y-10 mt-4">
+<div class="step-line"></div>
+<!-- Past Achievement -->
+<div class="relative z-10 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg shrink-0">
+<i class="fas fa-history"></i>
+</div>
+<div>
+<h4 class="font-bold font-montserrat text-lg text-gray-800">2024 - 2025</h4>
+<p class="text-sm text-gray-600 font-roboto mt-1">Succès confirmé avec des chiffres records.</p>
+<div class="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-gray-100 rounded-full">
+<i class="fas fa-check-circle text-green-500 text-xs"></i>
+<span class="text-xs font-bold text-gray-700">Objectifs atteints</span>
+</div>
+</div>
+</div>
+<!-- The Win -->
+<div class="relative z-10 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-orange-brand text-white flex items-center justify-center shadow-lg shrink-0 border-4 border-white">
+<i class="fas fa-award"></i>
+</div>
+<div>
+<h4 class="font-bold font-montserrat text-lg text-orange-brand">Victoire Internationale</h4>
+<p class="text-sm text-gray-600 font-roboto mt-1">Prix remporté à l'international pour la <span class="font-bold text-black">2ème année consécutive</span>.</p>
+</div>
+</div>
+<!-- The Ambition -->
+<div class="relative z-10 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-white border-2 border-orange-brand text-orange-brand flex items-center justify-center shadow-lg shrink-0">
+<i class="fas fa-arrow-up"></i>
+</div>
+<div>
+<h4 class="font-bold font-montserrat text-lg text-gray-800">Vision 2026</h4>
+<p class="text-sm text-gray-600 font-roboto mt-1">Aller plus loin et relever un nouveau défi d'excellence.</p>
+</div>
+</div>
+</div>
+<div class="mt-auto bg-gray-50 p-4 rounded-lg border-l-4 border-black">
+<p class="italic text-gray-700 font-roboto text-sm">
+                        "Nous souhaitons consolider notre leadership et viser l'excellence absolue pour cette nouvelle édition."
+                    </p>
+</div>
+</div>
+<!-- Right Column: The Visual Challenge -->
+<div class="w-7/12 bg-gray-50 px-16 py-8 relative flex flex-col justify-center items-center overflow-hidden">
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-orange-100 rounded-full filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/3"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-gray-200 rounded-full filter blur-2xl opacity-50 translate-y-1/3 -translate-x-1/4"></div>
+<div class="relative z-10 text-center mb-10">
+<span class="px-4 py-1 bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-widest rounded-full mb-3 inline-block" style="position: relative; transform: translate(-6.323px, -23.7112px);">Le Challenge</span>
+<h3 class="text-4xl font-black font-montserrat text-black leading-tight" style="position: relative; transform: translate(0px, -26.8727px);">
+                        Être au <span class="text-orange-brand text-5xl relative inline-block">
+                            PODIUM
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-orange-brand opacity-30" preserveAspectRatio="none" viewBox="0 0 100 10">
+<path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</span>
+</h3>
+<p class="text-gray-500 font-roboto mt-2 text-lg" style="position: relative; transform: translate(-3.1615px, -31.615px);">Objectif stratégique pour l'année 2026</p>
+</div>
+<!-- Podium Visualization -->
+<div class="relative w-full max-w-md h-64 flex items-end justify-center gap-2 z-10">
+<!-- 2nd Place -->
+<div class="w-1/3 h-2/3 bg-gray-300 rounded-t-lg relative flex flex-col justify-end items-center pb-4 group hover:bg-gray-400 transition-colors duration-300 shadow-md">
+<div class="absolute -top-12 opacity-50">
+<i class="fas fa-medal text-4xl text-gray-400"></i>
+</div>
+<span class="text-6xl font-black text-white opacity-30 font-montserrat">2</span>
+</div>
+<!-- 1st Place (Winner) -->
+<div class="w-1/3 h-full bg-orange-brand rounded-t-lg relative flex flex-col justify-end items-center pb-6 shadow-xl z-20 transform scale-105">
+<div class="absolute -top-16 animate-bounce">
+<i class="fas fa-crown text-5xl text-yellow-400 drop-shadow-md" style="position: relative; transform: translate(-3.1615px, 17.3882px);"></i>
+</div>
+<div class="absolute top-4 w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-inner">
+<!-- Orange Logo Placeholder using CSS/Icon -->
+<div class="w-10 h-10 bg-orange-brand rounded-sm"><p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Orange_logo.svg" alt="Inserted image" style="max-width: 100%; height: auto;" data-height-listener-added="true"></p></div>
+</div>
+<span class="text-7xl font-black text-white font-montserrat">1</span>
+<span class="text-white font-bold font-roboto text-sm uppercase tracking-widest mt-2">Target</span>
+</div>
+<!-- 3rd Place -->
+<div class="w-1/3 h-1/2 bg-gray-300 rounded-t-lg relative flex flex-col justify-end items-center pb-4 group hover:bg-gray-400 transition-colors duration-300 shadow-md">
+<div class="absolute -top-12 opacity-50">
+<i class="fas fa-medal text-4xl text-gray-400"></i>
+</div>
+<span class="text-6xl font-black text-white opacity-30 font-montserrat">3</span>
+</div>
+</div>
+<div class="mt-8 flex gap-6">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold text-gray-600 font-roboto">Performance</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold text-gray-600 font-roboto">Reconnaissance</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold text-gray-600 font-roboto">Leadership</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer decoration -->
+<div class="absolute bottom-0 left-0 w-full h-2 bg-black"></div>
+</div>
+
+</body></html>

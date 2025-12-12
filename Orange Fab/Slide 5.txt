@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Orange Fab Maroc - 3ème Cohorte Orange Fab</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .bg-black-brand { background-color: #000000; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-line {
+            position: absolute;
+            left: 24px;
+            top: 40px;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden" style="">
+<div class="w-[1280px] h-[720px] bg-white flex flex-col relative overflow-hidden shadow-2xl mx-auto">
+<!-- Header -->
+<div class="w-full px-16 pt-10 pb-6 flex justify-between items-end border-b border-gray-200 bg-white z-10">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 bg-black flex items-center justify-center text-white font-bold text-xs rounded-sm">
+<i class="fas fa-rocket"></i>
+</div>
+<p class="text-sm font-roboto font-bold text-gray-500 uppercase tracking-wider">Accélération &amp; Impact</p>
+</div>
+<h2 class="text-5xl font-black font-montserrat text-black leading-tight">
+                3ème Cohorte <span class="text-orange-brand">Orange Fab</span>
+</h2>
+<p class="text-xl font-medium font-montserrat text-gray-600 mt-2">Secteurs &amp; Thématiques</p>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-3 h-3 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold font-montserrat">Orange Fab Maroc</p>
+</div>
+<p class="text-xs text-gray-500 font-roboto">Roadmap 2026</p>
+</div>
+</div>
+<!-- Content Split -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Column: Strategy & Narrative -->
+<div class="w-5/12 px-16 py-8 flex flex-col justify-between bg-white relative">
+<div>
+<h3 class="text-2xl font-bold font-montserrat text-black mb-6 border-l-4 border-orange-brand pl-4">Sélection &amp; Ambition</h3>
+<!-- KPI Box -->
+<div class="bg-gray-50 rounded-xl p-6 border border-gray-100 card-shadow mb-8 transform hover:scale-105 transition-transform duration-300">
+<div class="flex items-center gap-6">
+<div class="w-20 h-20 rounded-full bg-orange-brand flex items-center justify-center text-white shadow-lg">
+<i class="fas fa-users text-3xl"></i>
+</div>
+<div>
+<span class="text-6xl font-black text-black leading-none block mb-1">10</span>
+<p class="font-bold text-orange-brand uppercase text-sm tracking-wide">Startups</p>
+<p class="text-xs text-gray-500 font-roboto mt-1">Sélectionnées pour la 3ème Cohorte</p>
+</div>
+</div>
+</div>
+<!-- Context Text -->
+<div class="prose prose-sm font-roboto text-gray-600">
+<p class="mb-4">
+                        Cette nouvelle cohorte vise à identifier et propulser les pépites technologiques les plus prometteuses du marché marocain et africain.
+                    </p>
+<p>
+                        L'accent sera mis sur des secteurs stratégiques créateurs de valeur pour l'écosystème Orange et répondant aux besoins concrets des Business Units.
+                    </p>
+</div>
+</div>
+<!-- Bottom Decoration -->
+<div class="mt-auto">
+<div class="flex items-center gap-2 text-gray-400 font-roboto text-xs">
+<i class="fas fa-info-circle"></i>
+<p>Programme d'accélération intensif de 6 mois</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Objectives -->
+<div class="w-7/12 bg-gray-50 px-16 py-8 relative overflow-y-auto flex flex-col justify-center">
+<div class="absolute top-0 left-0 w-full h-full bg-opacity-5 pointer-events-none"></div>
+<!-- Main Title Right -->
+<h3 class="text-2xl font-bold font-montserrat text-black mb-10 flex items-center gap-3 relative z-10">
+<i class="fas fa-bullseye text-orange-brand"></i>
+                Objectifs Stratégiques 2026
+            </h3>
+<div class="space-y-6 relative z-10">
+<!-- Objective 1 -->
+<div class="bg-white p-8 rounded-xl shadow-md border-l-8 border-orange-brand flex items-center justify-between group hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center text-orange-brand group-hover:bg-orange-brand group-hover:text-white transition-colors duration-300">
+<i class="fas fa-file-signature text-2xl"></i>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="text-4xl font-black text-black">08</span>
+<h4 class="font-bold text-xl font-montserrat text-gray-800">Conventions</h4>
+</div>
+<p class="text-sm text-gray-600 font-roboto">Signées entre les startups accélérées et les Business Units (BU) d'Orange.</p>
+</div>
+</div>
+<div class="text-gray-300 group-hover:text-orange-brand transition-colors duration-300">
+<i class="fas fa-chevron-right text-2xl"></i>
+</div>
+</div>
+<!-- Objective 2 -->
+<div class="bg-white p-8 rounded-xl shadow-md border-l-8 border-black flex items-center justify-between group hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
+<i class="fas fa-sack-dollar text-2xl"></i>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="text-4xl font-black text-black">02</span>
+<h4 class="font-bold text-xl font-montserrat text-gray-800">Levées de fonds</h4>
+</div>
+<p class="text-sm text-gray-600 font-roboto">Réussies grâce à l'accompagnement et au réseau d'investisseurs partenaires.</p>
+</div>
+</div>
+<div class="text-gray-300 group-hover:text-black transition-colors duration-300">
+<i class="fas fa-chevron-right text-2xl"></i>
+</div>
+</div>
+</div>
+<!-- Additional Info -->
+<div class="mt-10 p-6 bg-orange-50 rounded-lg border border-orange-100 relative z-10">
+<div class="flex items-start gap-4">
+<i class="fas fa-lightbulb text-orange-brand mt-1"></i>
+<div>
+<h5 class="font-bold font-montserrat text-gray-800 text-sm mb-1">Impact attendu</h5>
+<p class="text-xs text-gray-600 font-roboto">
+                            Ces objectifs visent à concrétiser la valeur ajoutée du programme Start &amp; Scale en transformant l'innovation en opportunités business tangibles pour Orange et les startups.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer decoration -->
+<div class="absolute bottom-0 left-0 w-full h-2 bg-black"></div>
+</div>
+
+</body></html>

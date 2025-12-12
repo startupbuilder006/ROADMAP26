@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1280, initial-scale=1.0" name="viewport"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; background-color: #f5f5f5; }
+    .slide-container {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        background-color: #f5f5f5; /* Light gray background */
+        display: flex;
+        flex-direction: column;
+        color: #333;
+    }
+    
+    /* Brand Colors */
+    .bg-header-black { background-color: #000000; }
+    .text-orange-primary { color: #FF7900; }
+    .bg-orange-primary { background-color: #FF7900; }
+    
+    /* Specific Colors requested */
+    .bg-badge-orange { background-color: #FF8C00; } /* Master Repair */
+    .bg-badge-purple { background-color: #9b87f5; } /* Workshop */
+    .bg-badge-blue { background-color: #0ea5e9; }   /* PRP & Arduino */
+    .bg-badge-green { background-color: #4ade80; }  /* NomadLab */
+    
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    
+    /* Grid System */
+    .timeline-wrapper {
+        flex: 1;
+        padding: 0 40px 20px 40px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .months-header {
+        display: grid;
+        grid-template-columns: 50px repeat(12, 1fr);
+        padding-top: 20px;
+        padding-bottom: 12px;
+        margin-bottom: 0;
+        z-index: 20;
+    }
+
+    .month-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 0.95rem; /* Increased size */
+        color: #000; /* Darker for better visibility */
+        text-transform: uppercase;
+        white-space: nowrap;
+        /* Removed rotation */
+    }
+
+    .grid-container {
+        position: relative;
+        flex: 1;
+        display: grid;
+        grid-template-columns: 50px repeat(12, 1fr);
+        border-top: 2px solid #333; /* Distinct separation */
+    }
+
+    /* Column Backgrounds */
+    .col-bg {
+        border-right: 1px solid #e5e5e5;
+        height: 100%;
+    }
+    .col-bg:nth-child(even) {
+        background-color: #ffffff;
+    }
+    .col-bg:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+    
+    /* Side Label */
+    .side-label-container {
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+    }
+    
+    .side-label {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #888;
+        letter-spacing: 2px;
+    }
+
+    /* Badges */
+    .pill-badge {
+        position: absolute;
+        height: 32px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 0.65rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 10;
+        white-space: nowrap;
+        padding: 0 8px;
+        text-align: center;
+        transform: translateX(-50%); /* For centering based on left % */
+    }
+    
+    .circle-badge {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 0.6rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+
+    /* NomadLab Bar */
+    .nomad-bar {
+        position: absolute;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #4ade80;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 0.7rem;
+        color: white;
+        z-index: 5;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .diamond-marker {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 0.9rem;
+        z-index: 15;
+        transform: translateX(-50%);
+    }
+    
+    .diamond-shape {
+        width: 14px;
+        height: 14px;
+        background-color: #4ade80;
+        transform: rotate(45deg);
+        margin-right: 8px;
+    }
+
+    /* Content Layout Container */
+    .content-layer {
+        position: absolute;
+        top: 0;
+        left: 50px; /* Offset by side label width */
+        right: 0;
+        bottom: 0;
+    }
+
+</style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<div class="bg-header-black py-5 px-10 flex justify-between items-center shadow-md z-30">
+<h1 class="text-3xl font-montserrat font-black text-orange-primary uppercase tracking-wide">
+            ROADMAP FABLAB SOLIDAIRE MAROC 2026
+        </h1>
+<div class="text-orange-primary text-4xl leading-none">•</div>
+</div>
+<div class="timeline-wrapper">
+<!-- Months Header -->
+<div class="months-header">
+<div></div> <!-- Corner -->
+<div class="month-label">Janvier</div>
+<div class="month-label">Février</div>
+<div class="month-label">Mars</div>
+<div class="month-label">Avril</div>
+<div class="month-label">Mai</div>
+<div class="month-label">Juin</div>
+<div class="month-label">Juillet</div>
+<div class="month-label">Août</div>
+<div class="month-label">Septembre</div>
+<div class="month-label">Octobre</div>
+<div class="month-label">Novembre</div>
+<div class="month-label">Décembre</div>
+</div>
+<!-- Main Grid Area -->
+<div class="grid-container">
+<!-- Left Side Label -->
+<div class="side-label-container">
+<span class="side-label">EVENTS</span>
+</div>
+<!-- Grid Columns Backgrounds (12 months) -->
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<div class="col-bg"></div>
+<!-- Absolute Positioning Layer for Items -->
+<div class="content-layer">
+<!-- ROW 1: Master Repair (Orange) -->
+<!-- Master Repair Rabat/Agadir (March-April) - Spans 2 months (16.66% start of Mar to end of Apr) -->
+<!-- Center of Mar-Apr block is between 3rd and 4th column line. -->
+<!-- Left: 16.66% -> Width: 16.66% -->
+<div class="pill-badge bg-badge-orange" style="top: 10%; left: 25%; width: 16%; transform: translateX(-50%);">
+<p>Master repair Rabat/Agadir</p>
+</div>
+<!-- Master Repair Rabat (August) -->
+<div class="pill-badge bg-badge-orange" style="top: 10%; left: 62.5%; width: 12%; transform: translateX(-50%);">
+<p>Master repair Rabat</p>
+</div>
+<!-- Master Repair Agadir (September) -->
+<div class="pill-badge bg-badge-orange" style="top: 20%; left: 70.83%; width: 12%; transform: translateX(-50%);">
+<p>Master repair Agadir</p>
+</div>
+<!-- ROW 2: Workshops (Purple) -->
+<!-- 12 months, centered in each column -->
+<!-- Column width 8.333% -->
+<!-- Centers: 4.16, 12.5, 20.83, 29.16, 37.5, 45.83, 54.16, 62.5, 70.83, 79.16, 87.5, 95.83 -->
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 4.16%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 12.5%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 20.83%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 29.16%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 37.5%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 45.83%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 54.16%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 62.5%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 70.83%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 79.16%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 87.5%;"> <p>Workshop R/A</p> </div>
+<div class="pill-badge bg-badge-purple" style="top: 36%; left: 95.83%;"> <p>Workshop R/A</p> </div>
+<!-- ROW 3: PRP (Blue Circles) -->
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 4.16%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 12.5%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 20.83%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 29.16%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 37.5%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 45.83%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 54.16%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 62.5%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 70.83%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 79.16%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 87.5%;"> <p>PRP</p> </div>
+<div class="circle-badge bg-badge-blue" style="top: 50%; left: 95.83%;"> <p>PRP</p> </div>
+<!-- ROW 4: Specific Events (Blue/Orange) -->
+<!-- Arduino Day (March) -->
+<div class="pill-badge bg-badge-blue" style="top: 66%; left: 20.83%; width: 8.5%;">
+<p>Arduino day</p>
+</div>
+<!-- ODC Project Maker (Aug-Sept) -->
+<!-- Center of Aug-Sept is boundary line. Start 58.33, End 75. Center 66.66 -->
+<div class="pill-badge bg-badge-orange" style="top: 66%; left: 66.66%; width: 14%;">
+<p>ODC Project Maker</p>
+</div>
+<!-- ROW 5: NomadLab (Green) -->
+<!-- Labels -->
+<div class="diamond-marker" style="top: 76%; left: 25%;">
+<div class="diamond-shape"></div>
+<p>NomadLab</p>
+</div>
+<div class="diamond-marker" style="top: 76%; left: 75%;">
+<div class="diamond-shape"></div>
+<p>NomadLab</p>
+</div>
+<!-- Bar 1: PFE (Feb-May) -->
+<!-- Start Feb (8.33), End May (41.66). Width 33.33% -->
+<div class="nomad-bar" style="top: 86%; left: 8.33%; width: 33.33%;">
+<p>PFE</p>
+</div>
+<!-- Bar 2: OSC 2026 (June-Aug) -->
+<!-- Start June (41.66), End Aug (66.66). Width 25% -->
+<div class="nomad-bar" style="top: 86%; left: 41.66%; width: 25%;">
+<p>OSC 2026</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Roadmap Orange Fab 2026 - PFE et PFA</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .bg-black-brand { background-color: #000000; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+        
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-line {
+            position: absolute;
+            left: 24px;
+            top: 40px;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden" style="">
+<div class="w-[1280px] min-h-[720px] bg-white flex flex-col relative overflow-hidden shadow-2xl mx-auto">
+<!-- Header -->
+<div class="w-full px-16 pt-10 pb-6 flex justify-between items-end border-b border-gray-200 bg-white z-10" style="position: relative; transform: translate(0px, -17.8118px);">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 bg-black flex items-center justify-center text-white font-bold text-xs rounded-sm">
+<i class="fas fa-user-graduate"></i>
+</div>
+<p class="text-sm font-roboto font-bold text-gray-500 uppercase tracking-wider">Talents &amp; Innovation</p>
+</div>
+<h2 class="text-5xl font-black font-montserrat text-black leading-tight">
+                    PFE et <span class="text-orange-brand">PFA</span>
+</h2>
+<p class="text-xl font-medium font-montserrat text-gray-600 mt-2">Synergie Étudiants &amp; Croissance Startups</p>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<div class="w-3 h-3 bg-orange-brand rounded-full"></div>
+<p class="text-sm font-bold font-montserrat">Roadmap 2026</p>
+</div>
+<p class="text-xs text-gray-500 font-roboto">Collaboration Académique</p>
+</div>
+</div>
+<!-- Content Split -->
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Column: Strategy & Narrative -->
+<div class="w-5/12 px-16 py-8 flex flex-col justify-between bg-white relative" style="transform: translate(0px, -16.1925px);">
+<div>
+<h3 class="text-2xl font-bold font-montserrat text-black mb-6 border-l-4 border-orange-brand pl-4">Accélération Startups</h3>
+<!-- Process Steps -->
+<div class="relative space-y-8 mb-10">
+<div class="step-line" style="transform: translate(-3.23851px, 0px);"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-orange-brand text-white flex items-center justify-center shadow-lg shrink-0">
+<i class="fas fa-rocket"></i>
+</div>
+<div>
+<h4 class="font-bold font-montserrat text-lg">Boost Growth</h4>
+<p class="text-sm text-gray-600 font-roboto">Faire profiter les startups incubées par l'Orange Fab de l'expertise OSC.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center shadow-lg shrink-0">
+<i class="fas fa-code"></i>
+</div>
+<div>
+<h4 class="font-bold font-montserrat text-lg">Développement Solutions</h4>
+<p class="text-sm text-gray-600 font-roboto">Accélération technique et prototypage rapide des produits.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- KPI Box / Concept Box -->
+<div class="bg-gray-50 rounded-xl p-6 border border-gray-100 card-shadow mb-4" style="position: relative; transform: translate(-3.2385px, -108.49px);">
+<div class="flex items-center gap-4">
+<div class="text-5xl text-orange-brand">
+<i class="fas fa-handshake"></i>
+</div>
+<div class="mb-1">
+<p class="font-bold text-black uppercase text-sm">Win-Win</p>
+<p class="text-xs text-gray-500">Startups &amp; Talents PFE</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Examples & Partners -->
+<div class="w-7/12 bg-gray-50 px-16 py-8 relative overflow-y-auto" style="transform: translate(-1.61926px, -25.9079px);">
+<div class="absolute top-0 left-0 w-full h-full bg-opacity-5 pointer-events-none"></div>
+<!-- Section Title -->
+<div class="mb-6 relative z-10">
+<h3 class="text-xl font-bold font-montserrat text-black mb-2 flex items-center gap-2">
+<i class="fas fa-lightbulb text-orange-brand"></i>
+                        Co-création Interne
+                    </h3>
+<p class="text-sm text-gray-600 font-roboto mb-6">
+                        Développement de solutions sur mesure avec les stagiaires PFE pour répondre aux besoins des départements d'Orange.
+                    </p>
+<div class="grid grid-cols-1 gap-4">
+<!-- Example 1 -->
+<div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-orange-brand flex items-start gap-4 transition-transform hover:translate-x-1 duration-300">
+<div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-brand shrink-0">
+<i class="fas fa-users-cog"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg font-montserrat mb-1">Automatisation RH &amp; Juridique</h4>
+<p class="text-sm text-gray-600 font-roboto">Optimisation des processus administratifs et automatisation des tâches répétitives pour les équipes internes.</p>
+</div>
+</div>
+<!-- Example 2 -->
+<div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-black flex items-start gap-4 transition-transform hover:translate-x-1 duration-300">
+<div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-black shrink-0">
+<i class="fas fa-smile-beam"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg font-montserrat mb-1">Expérience Client (CX)</h4>
+<p class="text-sm text-gray-600 font-roboto">Création de plateformes et d'outils innovants pour améliorer le parcours et la satisfaction client.</p>
+</div>
+</div>
+<!-- Example 3 -->
+<div class="bg-white p-5 rounded-xl shadow-sm border-l-4 border-gray-400 flex items-start gap-4 transition-transform hover:translate-x-1 duration-300">
+<div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 shrink-0">
+<i class="fas fa-laptop-medical"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg font-montserrat mb-1">Solutions Métiers</h4>
+<p class="text-sm text-gray-600 font-roboto">Développement d'outils spécifiques pour supporter l'efficacité opérationnelle des différentes Business Units.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer decoration -->
+<div class="absolute bottom-0 left-0 w-full h-2 bg-black"></div>
+</div>
+
+</body></html>

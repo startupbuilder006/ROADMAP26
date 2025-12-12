@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=1280, initial-scale=1.0" name="viewport">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    body { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; background-color: #000000; }
+    .slide-container {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .text-brand-orange { color: #FF7900; }
+    .bg-brand-orange { background-color: #FF7900; }
+    .border-brand-orange { border-color: #FF7900; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    
+    /* List Item Styling */
+    .program-card {
+        background-color: #141414;
+        border-left: 3px solid #333;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .program-card:hover {
+        background-color: #1F1F1F;
+        border-left-color: #FF7900;
+        transform: translateX(10px);
+    }
+    
+    .icon-wrapper {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 8px;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        border: 1px solid #333;
+        transition: border-color 0.3s ease;
+    }
+
+    .program-card:hover .icon-wrapper {
+        border-color: #FF7900;
+        color: #FF7900;
+    }
+
+    .card-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        color: #FFFFFF;
+    }
+    
+    .card-subtitle {
+        font-size: 0.9rem;
+        color: #9CA3AF;
+        margin-top: 4px;
+        font-weight: 300;
+    }
+
+    /* Background Elements */
+    .bg-decoration {
+        position: absolute;
+        opacity: 0.05;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    /* Statistic Badge */
+    .stat-badge {
+        display: inline-flex;
+        align-items: center;
+        background-color: #1F1F1F;
+        padding: 8px 20px;
+        border-radius: 4px;
+        border: 1px solid #333;
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body style="">
+<div class="slide-container">
+<!-- Decorative Background -->
+<i class="fa-solid fa-gears bg-decoration text-white" style="font-size: 600px; right: -100px; top: 100px;"></i>
+<!-- Header -->
+<div class="px-16 pt-12 pb-4 flex justify-between items-end relative z-10 border-b border-gray-800 bg-black">
+<div>
+<div class="flex items-center mb-2">
+<span class="bg-brand-orange text-black font-bold px-2 py-0.5 text-xs uppercase tracking-widest mr-3">Formation</span>
+<h2 class="text-brand-orange font-montserrat font-bold tracking-widest uppercase text-sm">PRP - Courte Durée</h2>
+</div>
+<h1 class="text-4xl font-montserrat font-black uppercase leading-tight">
+                Programmes de<br>Reconversion
+            </h1>
+</div>
+<div class="text-right">
+<p class="text-xl font-light text-gray-400">Catalogue 2026</p>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 flex flex-col px-16 py-8 relative z-10">
+<!-- Context / Metric -->
+<div>
+<div class="stat-badge">
+<span class="text-4xl font-montserrat font-black text-brand-orange mr-3">6</span>
+<span class="text-sm font-bold text-gray-300 uppercase tracking-wide">Programmes par semestre<br><span class="font-normal text-gray-500 normal-case">Sur chaque FabLab</span></span>
+</div>
+</div>
+<!-- Grid Layout for List -->
+<div class="grid grid-cols-2 gap-x-12 gap-y-2 h-full">
+<!-- Left Column -->
+<div class="flex flex-col justify-start">
+<!-- Item 1 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-robot text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Initiation à l’automatisation</p>
+<p class="card-subtitle">N8N, Zapier — Pour services tech</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-mobile-screen-button text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Flash et décodage</p>
+<p class="card-subtitle">Maintenance logicielle smartphones</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-microchip text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Réparation hardware</p>
+<p class="card-subtitle">Cartes mères et micro-soudure</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-cube text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title text-brand-orange">Master Class Modélisation 3D</p>
+<p class="card-subtitle">Conception avancée avec CATIA V5</p>
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div class="flex flex-col justify-start">
+<!-- Item 5 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-fire-extinguisher text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Systèmes de sécurité</p>
+<p class="card-subtitle">Montage et déploiement d’alarmes et incendie</p>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-shield-halved text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Accessoires Mobile</p>
+<p class="card-subtitle">Fabrication et vente de coques de téléphone</p>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="program-card group">
+<div class="icon-wrapper">
+<i class="fa-solid fa-video text-xl text-gray-400 group-hover:text-brand-orange"></i>
+</div>
+<div>
+<p class="card-title">Vidéosurveillance</p>
+<p class="card-subtitle">Installation et configuration de caméras</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-6 right-16 flex items-center gap-2 opacity-30 z-20">
+<span class="text-xs font-montserrat font-bold text-white uppercase tracking-widest">Compétences Techniques</span>
+<div class="w-12 h-px bg-white"></div>
+</div>
+</div>
+</div>
+
+</body></html>

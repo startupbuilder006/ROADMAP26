@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Orange Fab Maroc - Couverture Roadmap 2026</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+        .bg-orange-brand { background-color: #FF7900; }
+        .text-orange-brand { color: #FF7900; }
+        .border-orange-brand { border-color: #FF7900; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Noto%20Sans%20JP:wght@400&amp;display=swap" rel="stylesheet"></head>
+<body class="m-0 p-0 bg-gray-100 overflow-hidden" style="">
+<!-- Main Container -->
+<div class="w-[1280px] h-[720px] bg-white flex relative overflow-hidden shadow-2xl mx-auto">
+<!-- Left Content Panel (45%) -->
+<div class="w-[45%] h-full flex flex-col justify-between p-16 z-20 bg-white relative">
+<!-- Decorative Orange Line Top -->
+<div class="absolute top-0 left-0 w-full h-2 bg-black">
+<div class="w-1/3 h-full bg-orange-brand"></div>
+</div>
+<!-- Header: Logo Construction -->
+<div class="flex items-center gap-4 mt-4">
+<!-- Orange Logo Block Representation -->
+<div class="w-14 h-14 bg-black flex items-center justify-center">
+<div class="w-14 h-14 bg-orange-brand"></div>
+</div>
+<div class="flex flex-col justify-center">
+<h3 class="text-2xl font-bold font-montserrat text-black leading-none tracking-tight">
+                        orange<sup class="text-xs ml-0.5">TM</sup>
+</h3>
+<span class="text-xl font-light font-montserrat text-black leading-none tracking-wide mt-1">fab</span>
+</div>
+</div>
+<!-- Main Title Section -->
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-sm font-roboto font-bold text-gray-400 uppercase tracking-[0.2em] mb-6">
+                    Stratégie &amp; Innovation
+                </p>
+<h1 class="text-7xl font-black font-montserrat text-black leading-tight mb-6">
+                    ROADMAP<br>
+<span class="text-orange-brand">2026</span>
+</h1>
+<!-- Divider -->
+<div class="w-20 h-3 bg-black mb-8"></div>
+<p class="text-3xl font-light font-montserrat text-gray-800 leading-snug">
+                    Accélérateur Corporate&nbsp;</p><p class="text-3xl font-light font-montserrat text-gray-800 leading-snug"><span style="font-size: 1.875rem;">de startups</span></p>
+</div>
+<!-- Footer Info -->
+<div class="flex flex-col border-l-4 border-orange-brand pl-6 py-2">
+<p class="text-lg font-medium font-roboto text-gray-800">
+                    Orange Digital Center
+                </p>
+</div>
+</div>
+<!-- Right Image Panel (55%) -->
+<div class="w-[55%] h-full absolute right-0 top-0 z-10 bg-gray-900">
+<!-- Image -->
+<img alt="Startup Roadmap Strategic Planning" class="w-full h-full object-cover opacity-80" src="https://page.gensparksite.com/get_upload_url/4d27f51a45fc971865300666510c09760a929eacfb29b17ea5feedc0887b5af9/default/e7b9acb3-091f-4c16-88ec-f538cd60b20a" data-height-listener-added="true">
+<!-- Orange Accent Shape Bottom Right -->
+
+<!-- Floating Badge/Icon Area -->
+<div class="absolute top-12 right-12 flex gap-4">
+<div class="bg-white bg-opacity-90 p-4 rounded shadow-lg backdrop-blur-sm">
+<i class="fas fa-map-signs text-3xl text-orange-brand"></i>
+</div>
+<div class="bg-white bg-opacity-90 p-4 rounded shadow-lg backdrop-blur-sm">
+<i class="fas fa-rocket text-3xl text-black"></i>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
